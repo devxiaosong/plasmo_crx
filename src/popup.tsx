@@ -1,7 +1,13 @@
+import { useEffect } from "react"
 import { Button, ConfigProvider } from "antd"
 import { DashboardOutlined } from "@ant-design/icons"
+import { logInfo } from "./utils/misc"
 
 function IndexPopup() {
+  useEffect(() => {
+    logInfo("popup", "popup open")
+  }, [])
+
   const openDashboard = () => {
     chrome.tabs.create({
       url: chrome.runtime.getURL("tabs/dashboard.html")
