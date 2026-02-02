@@ -1,0 +1,51 @@
+# 依赖
+node_modules/
+
+# Plasmo 构建输出
+build/
+.plasmo/
+
+# 开发和生产构建产物
+dist/
+*.js.map
+*.css.map
+
+# 环境变量
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 编辑器和 IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 日志
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 临时文件
+.cache/
+.temp/
+.tmp/
+
+# 操作系统
+Thumbs.db
+.DS_Store
+
+# 打包文件
+*.crx
+*.pem
+*.zip
+
+# TypeScript
+*.tsbuildinfo
